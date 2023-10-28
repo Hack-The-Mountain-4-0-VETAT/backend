@@ -7,6 +7,7 @@ require("./connect_mongo")
 app.use(cors())
 app.use(express.json())
 app.use('/api', require('./routes/order'))
+app.use('/api', require('./routes/buy'))
 app.get("/", (req, res) => {
     res.send("hack the mountain VETAT")
 })
