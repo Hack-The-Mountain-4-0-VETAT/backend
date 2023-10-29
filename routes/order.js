@@ -10,7 +10,7 @@ router.post("/order", async (req, res) => {
     Quantity: req.body.quantity,
     Price: req.body.price,
   })
-  console.log(newOrder.userId);
+  console.log(newOrder);
     await newOrder.save();
     return res.send({success: "success" })
   }
